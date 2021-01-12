@@ -3,7 +3,6 @@ const maxOfTwoNumbers = (num1, num2) => {
     return num1 > num2 ? num1 : num2
 }
 maxOfTwoNumbers(10, 6)
-
 // Iteration #2: Find longest word
 
 const words = ['mystery', 'brother', 'aviator', 'crocodile', 'pearl', 'orchard', 'crackpot'];
@@ -29,6 +28,7 @@ function findLongestWord(words) {
     })
     return words[maxIndex]
 }
+
 
 // Iteration #3: Calculate the sum
 
@@ -61,6 +61,7 @@ function sum(numArray) {
     return sum;
 }
 
+
 // Iteration #4: Calculate the average
 // Level 1: Array of numbers
 const numbersAvg = [2, 6, 9, 10, 7, 4, 1, 9];
@@ -71,35 +72,32 @@ function averageNumbers(numberArray) {
         return sumNumbers(numberArray) / numberArray.length;
 }
 
-
 // // Level 2: Array of strings
- const wordsArr = ['seat', 'correspond', 'linen', 'motif', 'hole', 'smell', 'smart', 'chaos', 'fuel', 'palace'];
-function averageWordLength(stringArray) {
-     if (stringArray.length === 0)
-        return null;
-     let sum = 0;
-     stringArray.forEach(function (element) { sum += element.length; });
-    return sum / stringArray.length;
-}
+// const wordsArr = ['seat', 'correspond', 'linen', 'motif', 'hole', 'smell', 'smart', 'chaos', 'fuel', 'palace'];
+// function averageWordLength(stringArray) {
+//     if (stringArray.length === 0)
+//         return null;
+//     let sum = 0;
+//     stringArray.forEach(function (element) { sum += element.length; });
+//     return sum / stringArray.length;
+// }
 
 // Level 2: Array of mixed array
 
-const mixedArr = [6, 12, 'miami', 1, true, 'barca', '200', 'lisboa', 8, 10];
-
-function avg(mixedArray) {
-    if (mixedArray.length === 0)
-         return null;
-         let finalResult = sum(mixedArray) / mixedArray.length;
-     return Number(finalResult.toFixed(2))
+// function averageWordLength(stringArray) {
+//     if (stringArray.length === 0)
+//         return null;
+//     let sum = 0;
+//     stringArray.forEach(function (element) { sum += element.length; });
+//     return sum / stringArray.length;
 }
-avg(mixedArr)
-
 // bonus 4.1 generic avg() function
 
 
 // function avg(arr) {
 //     return sum(arr) / arr.length;
 //     }
+
 
 // Iteration #5: Unique arrays
 const wordsUnique = [
@@ -139,8 +137,6 @@ function uniquifyArray(wordsArray) {
         } )
      return uniqArray;
   }  
-
-
 
 
 
